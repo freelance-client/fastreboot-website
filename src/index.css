@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{background-color: whitesmoke}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.demo-container {
+  @apply flex flex-col justify-center items-center gap-4 bg-[#f0f0f0] py-8;
+}
+.radio-inputs {
+  @apply relative flex flex-wrap bg-[#EEE] box-border shadow-[0_0_0px_1px_rgba(0,0,0,0.06)] w-[70%] rounded-lg text-sm sm:text-base md:text-lg p-1 sm:gap-6 md:gap-8 lg:gap-12 font-semibold ;
+}
+.radio-inputs .radio {
+  @apply flex-auto text-center;
+}
+.radio-inputs .radio input {
+  @apply hidden;
+}
+.radio-inputs .radio .name {
+  @apply flex cursor-pointer items-center justify-center text-slate-700 transition-all duration-[0.15s] ease-[ease-in-out] px-0 py-2 rounded-lg border-[none];
+}
+.radio-inputs .radio input:checked + .name {
+  @apply bg-[#97c360] font-semibold;
+}
+
+/* video */
+.video-container {
+  @apply w-[70%] bg-[white] flex justify-center rounded-3xl;
+}
+.videobox {
+  @apply relative w-full pt-[56.25%];
+}
+iframe {
+  @apply absolute w-full h-full rounded-3xl border-0 left-0 top-0;
+
+  /* Remove border */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+  .video-container {
+    @apply w-[90%];
+
+    /* Adjust container width for smaller screens */
+  }
+}
+
+
+/* text-sm sm:text-base md:text-lg p-1 sm:gap-6 md:gap-8 lg:gap-12 font-semibold */
