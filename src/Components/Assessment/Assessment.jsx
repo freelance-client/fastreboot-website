@@ -25,7 +25,7 @@ const Assessment = () => {
             title: "Assessment",
         },
         {
-            issue: "Personality",
+            issue: "Genaral",
             id: 4,
             img: "https://picsum.photos/seed/picsum/200/300",
             duration: "5min",

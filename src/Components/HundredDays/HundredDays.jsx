@@ -24,7 +24,8 @@ const HundredDays = () => {
   
 
   return (
-    <>
+    
+    <div>
 
       <div className='container mx-auto pt-8 py-0' style={{ WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden', display: '-webkit-box' }}>
 
@@ -128,7 +129,7 @@ const HundredDays = () => {
       <Quotes/>
       <Milestone/>
 
-    </>
+      </div>
 
   )
 }

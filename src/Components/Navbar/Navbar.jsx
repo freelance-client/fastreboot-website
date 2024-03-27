@@ -40,14 +40,16 @@ const Navbar = () => {
         </div>
         <div className={`nav-links lg:flex ${isMenuOpen ? 'block' : 'hidden'}`}>
           <ul className="flex gap-3 font-medium">
-            <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/contact">Contact Us</a></li>
+            <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/"> Home</a></li>
             <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/about">About Us</a></li>
             <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/program">Our Program</a></li>
-            <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/testimonials">Testimonials</a></li>
+            <li className="hover:text-blue-400 hover:cursor-pointer"><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
         <div className={`gap-3 lg:flex ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <a href="/login">
           <button className="mr-2 bg-white text-black border-black border-2 px-5 py-2 rounded-xl font-bold hover:bg-stone-200 hover:scale-105 transition-transform duration-300">Login</button>
+          </a>
           <button className="bg-green-500 px-5 py-2 text-white rounded-xl font-bold hover:bg-green-600 hover:scale-105 transition-transform duration-300">Free Assessment</button>
         </div>
       </div>

@@ -51,27 +51,26 @@ const Milestone = () => {
 
         
 
-        <div className="container mx-auto bg-gray-300 py-8 w-full">
+        <div className="container mx-auto bg-gray-300 py-8 ">
         <h1 className='text-3xl font-extrabold text-center text-gray-600'>Step a Milestone
         </h1>
-        <div className='flex justify-center gap-5 mt-8'>
+        <div className='flex flex-wrap justify-center gap-5 mt-8'>
         {
-          milestoneContents.map((content, index)=>(
-            <div className='py-2 w-52 h-full flex  flex-wrap bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700' key={index}>
-            <div className=''>
-              <img src={content.image} alt="" className=' rounded-lg'/>
-            </div>
-            <div className=' py-2 '>
-            <h5 className="mb-2 text-base text-center md:text-sm font-bold tracking-tight text-gray-900 dark:text-white">{content.heading}</h5>
-            <p className=" px-1 items-start text-base text-center  font-normal text-gray-700 dark:text-gray-400" style={isopen ? null : ParagraphStyles}>
-              {content.para}
-            </p>
-            
-            </div>
-            <button className=' px-2 text-green-300' onClick={() => setIsopen(!isopen)}>{isopen ? "read less" : "read more..."}</button>
-          </div>
-          ))
-        }
+    milestoneContents.map((content, index) => (
+      <div className='py-2 w-52 h-full flex flex-wrap bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700' key={index}>
+        <div className=''>
+          <img src={content.image} alt="" className='rounded-lg'/>
+        </div>
+        <div className='py-2'>
+          <h5 className="mb-2 text-base text-center md:text-sm font-bold tracking-tight text-gray-900 dark:text-white">{content.heading}</h5>
+          <p className="px-1 items-start text-base text-center font-normal text-gray-700 dark:text-gray-400" style={isopen ? null : ParagraphStyles}>
+            {content.para}
+          </p>
+        </div>
+        <button className='px-2 text-green-300' onClick={() => setIsopen(!isopen)}>{isopen ? "read less" : "read more..."}</button>
+      </div>
+    ))
+  }
         </div>
 
       
