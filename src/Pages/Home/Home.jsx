@@ -1,4 +1,5 @@
 import React, { lazy } from 'react'
+import Gallery from '../../Components/Gallery/Gallery';
 
 // importing components
 
@@ -24,6 +25,7 @@ const Home = () => {
       <Hero/>
       <Impact/>
       <Banner/>
+      <Gallery/>
       <Assessment/>
       <Testimonials/>
       <DemoContents/>

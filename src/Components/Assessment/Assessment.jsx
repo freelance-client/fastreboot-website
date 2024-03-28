@@ -34,7 +34,7 @@ const Assessment = () => {
     ];
 
     return (
-        <div className='container max-w-full bg-gray-200 pb-20 pt-5'>
+        <div className='container mx-auto max-w-full bg-gray-200 pb-20 pt-5'>
             <h4 className='text-gray-500  font-bold text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 text-center'>Assessment</h4>
             <h3 className='font-bold text-md sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl mb-3 text-center px-5'>Take the First Step Towards Healing</h3>
             <p className='font-semibold text-sm sm:text-md md:text-xl lg:text-2xl xl:text-3xl mb-5 text-center px-5'>Take our assessment and analyze your mental health score.</p>

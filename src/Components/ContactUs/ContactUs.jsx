@@ -22,17 +22,17 @@ const ContactUs = () => {
                     <h1 className='text-base md:lg lg:text-xl text-gray-700'>//Connect with us on social media</h1>
                     <div className=' flex gap-3'>
                         <a href="">
-                            <div><FaInstagramSquare className=' h-8 w-8' />
+                            <div><FaInstagramSquare className=' h-8 w-8 text-gray-700 hover:text-gray-500' />
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/akshay-k-tfg/">
-                            <div><FaLinkedin className=' h-8 w-8' /></div>
+                            <div><FaLinkedin className=' h-8 w-8 text-gray-700 hover:text-gray-500' /></div>
                         </a>
                         <a href="">
-                            <div><FaYoutube className=' h-8 w-8' /></div>
+                            <div><FaYoutube className=' h-8 w-8 text-gray-700 hover:text-gray-500' /></div>
                         </a>
                         <a href="">
-                            <div><FaWhatsappSquare className=' h-8 w-8' /></div>
+                            <div><FaWhatsappSquare className=' h-8 w-8 text-gray-700 hover:text-gray-500' /></div>
                         </a>
                     </div>
                 </div>
